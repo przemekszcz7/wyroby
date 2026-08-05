@@ -1,0 +1,6 @@
+{
+  "name": "Wyroby z Drewna",
+  "description": "Solidne konstrukcje drewniane z Bielska-Białej - domki letniskowe, gospodarcze, wiaty, garaże i tarasy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

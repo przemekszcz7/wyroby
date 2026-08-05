@@ -6,14 +6,20 @@
   <title>Wyroby z Drewna – Domki, Tarasy i Konstrukcje Drewniane Bielsko-Biała</title>
   <meta name="description" content="Wyroby z Drewna z Bielska-Białej. Domki letniskowe, domki gospodarcze, garaże, wiaty oraz tarasy wykonywane z dbałością o trwałość i estetykę." />
   
-  <!-- Performance & Preconnect for CDN Images -->
+  <!-- Performance & Preconnect for CDN Images & Fonts -->
   <link rel="dns-prefetch" href="https://i.postimg.cc" />
   <link rel="preconnect" href="https://i.postimg.cc" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="image" href="https://i.postimg.cc/prKXszcH/474492182-590038510454330-7557095341734180540-n.jpg" fetchpriority="high" />
   <link rel="preload" as="image" href="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" fetchpriority="high" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" />
+  <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/jpeg" href="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" href="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3CSvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23172019' stroke='%23B88752' stroke-width='3'/%3E%3Cpath d='M32 14L14 30h6v18h24V30h6z' fill='%23B88752'/%3E%3Cpath d='M28 36h8v12h-8z' fill='%23172019'/%3E%3C/svg%3E" />
 
   <!-- Google Fonts Import -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -338,7 +344,10 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      background-image: url('https://i.postimg.cc/prKXszcH/474492182-590038510454330-7557095341734180540-n.jpg');
+      background-color: var(--color-deep-forest);
+      background-image: 
+        linear-gradient(180deg, rgba(23, 32, 25, 0.75), rgba(23, 32, 25, 0.85)),
+        url('https://i.postimg.cc/prKXszcH/474492182-590038510454330-7557095341734180540-n.jpg');
       background-size: cover;
       background-position: center center;
       padding: 5rem 0;
@@ -544,11 +553,22 @@
       margin-bottom: 0.2rem;
     }
 
+    @keyframes woodShimmer {
+      0% {
+        background-position: -200% 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
     .about-image-frame {
       position: relative;
       padding: 12px;
       border: 1px solid var(--color-border);
-      background: rgba(23, 32, 25, 0.4);
+      background: linear-gradient(90deg, #2A2118 25%, #4A3422 50%, #2A2118 75%);
+      background-size: 200% 100%;
+      animation: woodShimmer 3s infinite linear;
       border-radius: 4px;
     }
 
@@ -573,7 +593,9 @@
       aspect-ratio: 4 / 3;
       overflow: hidden;
       border: 1px solid var(--color-border);
-      background-color: var(--color-dark-wood);
+      background: linear-gradient(90deg, #2A2118 25%, #3c2d20 50%, #2A2118 75%);
+      background-size: 200% 100%;
+      animation: woodShimmer 3s infinite linear;
       border-radius: 3px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
@@ -1050,7 +1072,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="brand-logo" aria-label="Strona Główna">
-        <img src="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" alt="Wyroby z Drewna Logo" width="42" height="42" fetchpriority="high" decoding="async" />
+        <img src="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" alt="Wyroby z Drewna Logo" width="42" height="42" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" />
         <span class="brand-title">Wyroby z Drewna</span>
       </a>
 
@@ -1574,7 +1596,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" alt="Wyroby z Drewna Logo" width="40" height="40" loading="lazy" decoding="async" />
+            <img src="https://i.postimg.cc/nVSsrGBm/470659601-593839019965702-3702429210460470785-n.jpg" alt="Wyroby z Drewna Logo" width="40" height="40" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <span>Wyroby z Drewna</span>
           </div>
           <p class="footer-tagline">
